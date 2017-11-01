@@ -1,0 +1,17 @@
+Measure,Category,Measure Type,Positive if lower or higher
+OP-31,Cataract Surgery Outcome,Percentage,Higher
+OP-29,Colonoscopy follow-up,Percentage ,Higher
+OP-30,Colonoscopy follow-up,Percentage ,Higher
+OP-3b,Heart attack,Minutes,Lower
+OP-5,Heart attack,Minutes,Lower
+OP-2,Heart attack,Number,Higher
+OP-4,Heart attack,Number,Higher
+ED-2b,Emergency Department,Minutes,Lower
+OP-20,Emergency Department,Minutes,Lower
+OP-22,Emergency Department,Percentage,Lower
+OP-23,Emergency Department,Percentage,Higher
+IMM-2,Preventative Care,Number,Higher
+IMM-3-OP-27-FAC-ADHPCT,Preventative Care,Number,Higher
+STK-4,Stroke Care,Number,Higher
+VTE-6,Blood clot prevention and treatment,Number,Lower
+VTE-5,Blood clot prevention and treatment,Number,Higher
