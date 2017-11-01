@@ -1,17 +1,1 @@
-Measure,Category,Measure Type,Positive if lower or higher
-OP-31,Cataract Surgery Outcome,Percentage,Higher
-OP-29,Colonoscopy follow-up,Percentage ,Higher
-OP-30,Colonoscopy follow-up,Percentage ,Higher
-OP-3b,Heart attack,Minutes,Lower
-OP-5,Heart attack,Minutes,Lower
-OP-2,Heart attack,Number,Higher
-OP-4,Heart attack,Number,Higher
-ED-2b,Emergency Department,Minutes,Lower
-OP-20,Emergency Department,Minutes,Lower
-OP-22,Emergency Department,Percentage,Lower
-OP-23,Emergency Department,Percentage,Higher
-IMM-2,Preventative Care,Number,Higher
-IMM-3-OP-27-FAC-ADHPCT,Preventative Care,Number,Higher
-STK-4,Stroke Care,Number,Higher
-VTE-6,Blood clot prevention and treatment,Number,Lower
-VTE-5,Blood clot prevention and treatment,Number,Higher
+Table Name,Measure,Category,Measure Type,Positive if lower or higherNot in data,OP_31,Cataract Surgery Outcome,Percentage,HigherNot in data,OP_29,Colonoscopy follow-up,Percentage,HigherNot in data,OP_30,Colonoscopy follow-up,Percentage,Higherrank1,OP_3b,Heart attack,Minutes,Lowerrank2,OP_5,Heart attack,Minutes,Lowerrank3,OP_2,Heart attack,Number,Higherrank4,OP_4,Heart attack,Number,HigherNot used to determine quality,EDV,Emergency Department,Volume,N/Arank5,ED_1b,Emergency Department,Minutes,LowerNot used to determine quality,ED_2b,Emergency Department,Minutes,LowerNot used to determine quality,OP_18b,Emergency Department,Minutes,Lowerrank6,OP_20,Emergency Department,Minutes,LowerNot used to determine quality,OP_21,Emergency Department,Minutes,Lowerrank7,OP_22,Emergency Department,Percentage,Lowerrank8,OP_23,Emergency Department,Percentage,Higherrank9,IMM_2,Preventative Care,Number,Higherrank10,IMM_3_FAC_ADHPCT,Preventative Care,Number,Higherrank11,STK_4,Stroke Care,Number,Higherrank12,VTE_6,Blood clot prevention and treatment,Number,Lowerrank13,VTE_5,Blood clot prevention and treatment,Number,HigherNot used to determine quality,PC_01,Pregnancy and delivery care,Percent,Lower
