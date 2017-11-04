@@ -1,0 +1,69 @@
+Approach and Conclusion:
+
+Which Hospitals are Models of High-Quality Care?
+
+In order to determine which hospitals are models of high-quality care, we used the dataset called "timely and effective care" which provides scoring for several procedures performed at hospitals across the country. The procedures measured in this dataset include timeliness of care in acute situations (heart attack, stroke), as well as the percentage of patients who receive effective care in a timely manner for a range of conditions. The timeliness and effectiveness of each of these measures can have different units - either minutes (of waiting), percentage of patients, or the number of patients. Of all of the procedures in the dataset, 21 had definitions in the data dictionary online. Of those, we deemed 16 to be reasonable measures of care quality. We excluded certain measures that were more correlated with a hospital's/town's size than with it's quality of care, such as the total volume of patients at the emergency department. Of the 16 measures we deemed reasonable, there were 3 which were not present in the given dataset. Ultimately we used 13 measures to rank hospital quality. 
+
+
+In order to rank each hospital, we used the following approach:
+
+For each measure, we ranked the hospitals by their scores in ascending or descending order (based on whether the score was a positive sign if it was higher or lower). The procedures we measured as well as their order (ascending/descending) can be found in the measures_defninition.csv file under the Investigations directory. We limited the ranking for each measure to 10 hospitals. The hospital in the top ranking would receive 10 points, the following one would receive 9, continuing down the list, and the last one would receive 1 point. In some measures, several hospitals performed equally well, in which case we provided the same amount of points to each hospital. In the end, we aggregated the points for each hospital across all 13 measures, and ranked the hospitals by these composite scores.
+
+Based on the analysis above, we found that the following 10 hospitals modeled high-quality care based on the measures we studied. Below you can see the provider IDs, names, and composite scores of these hospitals:
+
+220111  GOOD SAMARITAN MEDICAL CENTER   20
+030023  FLAGSTAFF MEDICAL CENTER        20
+090005  SIBLEY MEMORIAL HOSPITAL        20
+490118  HENRICO DOCTORS' HOSPITAL       20
+320065  LEA REGIONAL MEDICAL CENTER     16
+010089  WALKER BAPTIST MEDICAL CENTER   14
+670006  THE HOSPITAL AT WESTLAKE MEDICAL CENTER 10
+520193  AURORA BAYCARE MEDICAL CTR      10
+520037  MINISTRY SAINT JOSEPHS HOSPITAL 10
+520008  WAUKESHA MEMORIAL HOSPITAL      10
+
+
+Which States are Models of High-Quality Care?
+
+In order to determine which states are models of high-quality care, we used the same approach described above for hospitals, except we used the average score for the state (average score of all hospitals in the state) for each measure. We created state rankings for all 13 measures, and ultimately created a composite score for each state and a final ranking of the top 10 states which modeled high-quality care. You can see the states which modeled the highest quality care and their composite scores below:
+
+UT      53
+SD      42
+ME      40
+KS      39
+NE      38
+MT      38
+NH      37
+WI      35
+WY      33
+CO      30
+
+Which Procedures have the Highest Variability between Hospitals?
+
+In order to determine which procedures have the highest variability between hospitals, we took our "scores" table which contained the "timely and effective care" data and filtered on the table for all 13 of the procedures that we decided to study in this project. For each of the procedures, we created a separate table of the scores assigned to each hospital which has performed it, and calculated the variance of those scores. You can find the procedures with the highest variances and their variances below:
+
+ED1     8617.740839212507
+ED2     3864.6924460743544
+OP 18   1656.5529409803205
+Median Time to Transfer to Another Facility for Acute Coronary Intervention     869.0306968514053
+Thrombolytic Therapy    481.98665882944397
+Head CT results 477.18888614639235
+Fibrinolytic Therapy Received Within 30 Minutes Of Hospital Arrival     352.6666666666667
+Fibrinolytic Therapy Received Within 30 Minutes of ED Arrival   325.74632352941165
+Median time to pain med 314.0819735739413
+Door to diagnostic eval 285.00371267017476
+
+Are Average Scores for Hospital Quality Correlated with Patient Survey Responses?
+
+In order to determine the correlation with patient survey responses, we compared our top 10 hospitals which model high-quality care against the top 10 rated hospitals according to patient responses. In the table below, you will find the provider ID, hospital name, composite score, and survey patient response score for the top 10 hospitals based on our analysis. As you can see, the top 10 hospitals based on our analysis do not have high patient response scores for the most part. This is probably due to the fact that our analysis is based on measures related to the hospital's ability to respond quickly and treat certain conditions, whereas the survey focused on different kinds of questions - such as cleanliness and communication. This tells us that even though a hospital performs well on certain procedures, it doesn't necessarily have an environment or staff that the patients appreciate. 
+
+490118  HENRICO DOCTORS' HOSPITAL       	20      2 out of 10
+220111  GOOD SAMARITAN MEDICAL CENTER   	20      0 out of 10
+090005  SIBLEY MEMORIAL HOSPITAL        	20      0 out of 10
+030023  FLAGSTAFF MEDICAL CENTER        	20      5 out of 10
+320065  LEA REGIONAL MEDICAL CENTER     	16      2 out of 10
+010089  WALKER BAPTIST MEDICAL CENTER   	14      0 out of 10
+670006  THE HOSPITAL AT WESTLAKE MEDICAL CENTER 10      7 out of 10
+520193  AURORA BAYCARE MEDICAL CTR      	10      6 out of 10
+520037  MINISTRY SAINT JOSEPHS HOSPITAL 	10      1 out of 10
+520008  WAUKESHA MEMORIAL HOSPITAL      	10      8 out of 10
