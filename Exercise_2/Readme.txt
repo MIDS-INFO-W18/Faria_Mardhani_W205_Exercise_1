@@ -4,7 +4,7 @@ Step 1: Connect to the specified AMI and clone the Github Repository MIDS-INFO-W
 
 Step 2: Enter the Exercise 2/extweetwordcount directory
 
-Step 3: Type: "sparse run" --> This will run the topology and write the output of the application to the PostgreSQL database. Note: The program will continue running (obtaining a livestream tweets) until you stop it by hitting Control + c.
+Step 3: Type: "sparse run" --> This will run the topology and write the output of the application to the PostgreSQL database. Note: The program will continue running (obtaining a livestream of tweets) until you stop it by hitting Control + c.
 
 Step 4: You can now query the database using the finalresults.py and histogram.py files. In order to do this, first change your directory back to Exercise_2
 
