@@ -1,6 +1,6 @@
 Instructions on how to run the Faria_W205 Twitter Application:
 
-Step 1: Connect to the specified AMI and clone the Github Repository MIDS-INFO-W18/w205_2017_fall/Exercise_2
+Step 1: Connect to the specified AMI and clone the Github Repository MIDS-INFO-W18/w205_2017_fall/Exercise_2. Start hadoop and postgres by typing ("/root/start-hadoop.sh" and "/data/start_postgres.sh") 
 
 Step 2: Enter the Exercise 2/extweetwordcount directory
 
@@ -12,4 +12,7 @@ Step 5: Now, in order to run the finalresults.py file, type "python finalresults
 
 Step 6: In order to run the histogram.py file, write the command to run and specify two integers (e.g., "python histogram.py 1,4"). The program will return all words and counts for words that have counts which fall in the range you've specified.
 
-
+Step 7: Additionally, if you would like to output a bar chart of the top 20
+words (in terms of count) in the database, you can run the "Plot.py" file by
+typing "python Plot.py". This will output a file called Plot.png which you can
+then open by copying to your local hard drive. 
