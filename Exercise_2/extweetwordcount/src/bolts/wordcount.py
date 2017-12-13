@@ -12,7 +12,8 @@ class WordCounter(Bolt):
 	self.conn = psycopg2.connect(database="tcount", user="postgres", password="pass", host="localhost", port="5432")
 
     def process(self, tup):
-        word = tup.values[0]
+	
+        word = str(tup.values[0])
 	cur = self.conn.cursor()
 	cur.execute("UPDATE tweetwordcount SET count=count+1 WHERE word=%s", (word,))
 	if cur.rowcount == 0:
