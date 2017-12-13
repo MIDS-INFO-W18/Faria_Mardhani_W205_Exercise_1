@@ -73,7 +73,7 @@ class Tweets(Spout):
         try:
             tweet = self.queue().get(timeout = 0.1) 
             if tweet:
-                self.log("Tweet available in queue")
+                #self.log("Tweet available in queue")
                 self.queue().task_done()
                 self.emit([tweet])
  
